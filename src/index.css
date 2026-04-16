@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@keyframes skyFloat {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+@keyframes skyPulse {
+  0%,
+  100% {
+    opacity: 0.35;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.sky-float {
+  animation: skyFloat 8s ease-in-out infinite;
+}
+
+.sky-pulse {
+  animation: skyPulse 5s ease-in-out infinite;
+}
